@@ -1,0 +1,47 @@
+body {
+    background: url("blurred.jpg");
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+#spinner {
+    display: none;
+    width: 5rem;
+    height: 5rem;
+}
+
+#brain {
+    display: none;
+    text-align: center;
+}
+
+.navbar {
+    background-color: rgba(255, 255, 255, 0);
+    transition: background-color 500ms;
+}
+
+.navbar.scrolled {
+    background: rgb(63, 112, 170);
+    transition: background 500ms;
+}
+
+.animate-bottom {
+    position: relative;
+    animation-name: animatebottom;
+    animation-duration: 1s
+}
+
+@keyframes animatebottom {
+    from {
+        bottom: -100px;
+        opacity: 0
+    }
+
+    to {
+        bottom: 0;
+        opacity: 1
+    }
+}
